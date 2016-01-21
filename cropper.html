@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,maximum-scale=1,user-scalable=no,minimal-ui"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-touch-fullscreen" content="no"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta charset="utf-8">
+    <title>图片切割</title>
+    </head>
+<body>    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/base.css" />
+    <link rel="stylesheet" type="text/css" href="./css/cropper.css" /><h1>js图片切割功能</h1>
+<div class="cropperbox" id="cropperbox"></div>
+<br>
+<input type="file" id="file">
+<br>
+<br>
+<div class="cropperBtn" id="cropperBtn">
+	确定
+</div>
+
+<img src="" class="newimg" id="newimg"><script src="./js/cropper.js"></script>
+<script>
+	var sucFun = function(){
+		document.getElementById("newimg").style.display = "block";
+		flag = false;
+		btn.innerHtml = "确定";
+	};
+	var imgcropper = new ImageCropper({
+		box:"cropperbox", //box Id
+		callback: sucFun
+	});
+	var flag = false;
+	// imgcropper.loadImg("./testimages/2.pic_hd.jpg");
+	var btn = document.getElementById("cropperBtn");
+	btn.addEventListener('click',function(){
+		if(flag){return false;}
+		flag = true;
+		btn.innerHtml = "图片生成中....";
+		var newimg = imgcropper.fnnewimg();
+		document.getElementById("newimg").src = newimg;
+	});
+
+	var file = document.getElementById("file");
+	file.addEventListener('change',function(){
+		var src = file.value;
+		var reg = /image/i;
+		var result = reg.test(file.files[0].type);
+		if(!result){
+					alert("图片格式错误");
+					return false;
+		}
+		console.log(file.files)
+		imgcropper.loadImg(file.files[0]);
+	});
+</script>
+</body>

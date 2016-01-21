@@ -1,0 +1,116 @@
+.cropperbox {
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  width: 320px;
+  height: 280px;
+  background: #666;
+}
+.cropperbox .cropper {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #666;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+}
+.cropperbox .cropper .dragLeftTop,
+.cropperbox .cropper .dragLeft,
+.cropperbox .cropper .dragLeftBot,
+.cropperbox .cropper .dragRightTop,
+.cropperbox .cropper .dragRight,
+.cropperbox .cropper .dragRightBot,
+.cropperbox .cropper .dragTopCenter,
+.cropperbox .cropper .dragBotCenter {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  border: 1px solid #666;
+  background: #fff;
+  z-index: 1;
+}
+.cropperbox .cropper .dragBg {
+  cursor: move;
+  background: #fff;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+.cropperbox .cropper .dragLeftTop {
+  left: -5px;
+  top: -5px;
+  cursor: nw-resize;
+}
+.cropperbox .cropper .dragLeft {
+  left: -5px;
+  top: 50%;
+  margin-top: -5px;
+  cursor: w-resize;
+}
+.cropperbox .cropper .dragLeftBot {
+  left: -5px;
+  bottom: -5px;
+  cursor: sw-resize;
+}
+.cropperbox .cropper .dragRightTop {
+  right: -5px;
+  top: -5px;
+  cursor: ne-resize;
+}
+.cropperbox .cropper .dragRight {
+  right: -5px;
+  top: 50%;
+  margin-top: -5px;
+  cursor: e-resize;
+}
+.cropperbox .cropper .dragRightBot {
+  right: -5px;
+  bottom: -5px;
+  cursor: se-resize;
+}
+.cropperbox .cropper .dragTopCenter {
+  left: 50%;
+  top: -5px;
+  margin-left: -5px;
+  cursor: n-resize;
+}
+.cropperbox .cropper .dragBotCenter {
+  left: 50%;
+  bottom: -5px;
+  margin-left: -5px;
+  cursor: s-resize;
+}
+.cropperBtn {
+  background: #ccc;
+  height: 40px;
+  line-height: 40px;
+  width: 320px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  margin: 0 auto;
+}
+#file {
+  width: 320px;
+  margin: 0 auto;
+  display: block;
+}
+.newimg {
+  width: 300px;
+  margin: 20px auto;
+  display: none;
+}
+h1 {
+  line-height: 40px;
+  color: #666;
+  font-size: 18px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  background: #ccc;
+}
