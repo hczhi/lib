@@ -3,8 +3,8 @@ cropper:
 js图片切割工具，基于canvas切割图片，用于用户上传头像／背景图设置等功能。 适配手机移动端。
 
 <pre> 
- var flag = false; <br/>
-	var sucFun = function(){ <br/>
+ 	<div>var flag = false; <div/>
+	<div>var sucFun = function(){ <div/>
 		****//回调 <br/>
 	}; <br/>
 	var imgcropper = new ImageCropper({ <br/>
