@@ -27,7 +27,7 @@
 	var sucFun = function(){
 		document.getElementById("newimg").style.display = "block";
 		flag = false;
-		btn.innerHtml = "确定";
+		btn.innerHTML = "确定";
 	};
 	var imgcropper = new ImageCropper({
 		box:"cropperbox", //box Id
@@ -39,7 +39,7 @@
 	btn.addEventListener('click',function(){
 		if(flag){return false;}
 		flag = true;
-		btn.innerHtml = "图片生成中....";
+		btn.innerHTML = "图片生成中....";
 		var newimg = imgcropper.fnnewimg();
 		document.getElementById("newimg").src = newimg;
 	});
