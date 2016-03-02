@@ -23,3 +23,20 @@ js图片切割工具，基于canvas切割图片，用于用户上传头像／背
 		imgcropper.loadImg(file.files[0]); 
 	}); 
 </pre>
+
+***********************
+
+scroll:
+自定义滚动条。
+
+<pre> 
+	var myscroll_obj = {
+		box : $("#scrollbox"),
+		innerbox:$(".scroll-c"),
+		width: 300,
+		height:400,
+		innerHeight:$(".scroll-c").height(),
+		scrollheight:20
+	}
+	var myscroll = new myScroll(myscroll_obj);
+</pre>
