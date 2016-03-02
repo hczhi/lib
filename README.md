@@ -1,6 +1,7 @@
 # lib
 cropper:
 js图片切割工具，基于canvas切割图片，用于用户上传头像／背景图设置等功能。 适配手机移动端。
+http://hc250.sinaapp.com/output/cropper.html
 
 <pre> 
  	var flag = false;
@@ -28,7 +29,7 @@ js图片切割工具，基于canvas切割图片，用于用户上传头像／背
 
 scroll:
 自定义滚动条。
-
+http://hc250.sinaapp.com/output/scroll.html
 <pre> 
 	var myscroll_obj = {
 		box : $("#scrollbox"),
