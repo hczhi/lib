@@ -39,6 +39,31 @@ var _map = {
             "uri": "/index.html",
             "type": "html"
         },
+        "widget/scroll/scroll.html": {
+            "uri": "/widget/scroll/scroll.html",
+            "type": "html"
+        },
+        "widget/scroll/js/scroll.js": {
+            "uri": "./js/scroll.js",
+            "type": "js",
+            "deps": [
+                "static/css/base.less",
+                "widget/scroll/css/scroll.less",
+                "static/js/zepto.js"
+            ]
+        },
+        "widget/scroll/css/scroll.less": {
+            "uri": "./css/scroll.css",
+            "type": "css"
+        },
+        "static/js/zepto.js": {
+            "uri": "./js/zepto.js",
+            "type": "js"
+        },
+        "page/scroll.html": {
+            "uri": "/scroll.html",
+            "type": "html"
+        },
         "static/js/browser.min.js": {
             "uri": "./js/browser.min.js",
             "type": "js"
@@ -49,27 +74,19 @@ var _map = {
         },
         "static/js/react-dom.js": {
             "uri": "./js/react-dom.js",
-            "type": "js",
-            "pkg": "p0"
+            "type": "js"
         },
         "static/js/react.js": {
             "uri": "./js/react.js",
-            "type": "js",
-            "pkg": "p0"
+            "type": "js"
         },
         "static/js/reflux.js": {
             "uri": "./js/reflux.js",
-            "type": "js",
-            "pkg": "p0"
+            "type": "js"
         },
         "static/js/touch.js": {
             "uri": "./js/touch.js",
             "type": "js"
-        },
-        "static/js/zepto.js": {
-            "uri": "./js/zepto.js",
-            "type": "js",
-            "pkg": "p1"
         },
         "widget/m2/css/m12222.css": {
             "uri": "./css/m12222.css",
@@ -88,22 +105,5 @@ var _map = {
             "type": "html"
         }
     },
-    "pkg": {
-        "p0": {
-            "uri": "/js/react.js",
-            "type": "js",
-            "has": [
-                "static/js/react-dom.js",
-                "static/js/react.js",
-                "static/js/reflux.js"
-            ]
-        },
-        "p1": {
-            "uri": "/js/zepto.js",
-            "type": "js",
-            "has": [
-                "static/js/zepto.js"
-            ]
-        }
-    }
+    "pkg": {}
 };
