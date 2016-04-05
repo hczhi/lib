@@ -4,16 +4,21 @@ var _map = {
             "uri": "/map.js",
             "type": "js"
         },
-        "widget/cropper/cropper.html": {
-            "uri": "/widget/cropper/cropper.html",
+        "page/calendar.html": {
+            "uri": "/calendar.html",
             "type": "html"
         },
-        "widget/cropper/js/cropper.js": {
-            "uri": "./js/cropper.js",
+        "widget/calendar/calendar.html": {
+            "uri": "/widget/calendar/calendar.html",
+            "type": "html"
+        },
+        "widget/calendar/js/calendar.js": {
+            "uri": "./js/calendar.js",
             "type": "js",
             "deps": [
                 "static/css/base.less",
-                "widget/cropper/css/cropper.less"
+                "widget/calendar/css/calendar.less",
+                "static/js/jquery-1.11.2.min.js"
             ]
         },
         "static/css/base.less": {
@@ -27,16 +32,40 @@ var _map = {
             "uri": "./css/reset.css",
             "type": "css"
         },
-        "widget/cropper/css/cropper.less": {
-            "uri": "./css/cropper.css",
+        "widget/calendar/css/calendar.less": {
+            "uri": "./css/calendar.css",
             "type": "css"
+        },
+        "static/js/jquery-1.11.2.min.js": {
+            "uri": "./js/jquery-1.11.2.min.js",
+            "type": "js"
         },
         "page/cropper.html": {
             "uri": "/cropper.html",
             "type": "html"
         },
+        "widget/cropper/cropper.html": {
+            "uri": "/widget/cropper/cropper.html",
+            "type": "html"
+        },
+        "widget/cropper/js/cropper.js": {
+            "uri": "./js/cropper.js",
+            "type": "js",
+            "deps": [
+                "static/css/base.less",
+                "widget/cropper/css/cropper.less"
+            ]
+        },
+        "widget/cropper/css/cropper.less": {
+            "uri": "./css/cropper.css",
+            "type": "css"
+        },
         "page/index.html": {
             "uri": "/index.html",
+            "type": "html"
+        },
+        "page/scroll.html": {
+            "uri": "/scroll.html",
             "type": "html"
         },
         "widget/scroll/scroll.html": {
@@ -60,16 +89,8 @@ var _map = {
             "uri": "./js/zepto.js",
             "type": "js"
         },
-        "page/scroll.html": {
-            "uri": "/scroll.html",
-            "type": "html"
-        },
         "static/js/browser.min.js": {
             "uri": "./js/browser.min.js",
-            "type": "js"
-        },
-        "static/js/jquery-1.11.2.min.js": {
-            "uri": "./js/jquery-1.11.2.min.js",
             "type": "js"
         },
         "static/js/react-dom.js": {
